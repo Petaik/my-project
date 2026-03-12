@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Peter Olusola Aiki</title>
+  <title>About – Peter Olusola Aiki</title>
   <style>
     * {
       box-sizing: border-box;
@@ -19,7 +19,6 @@
       flex-direction: column;
     }
 
-    /* Hero Section */
     .hero {
       flex: 1;
       display: flex;
@@ -34,7 +33,7 @@
       padding: 4rem 4.5rem;
       text-align: center;
       box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
-      max-width: 520px;
+      max-width: 560px;
       width: 100%;
     }
 
@@ -54,23 +53,51 @@
     h1 {
       color: #1a1a1a;
       font-size: 2.1rem;
-      margin-bottom: 0.6rem;
+      margin-bottom: 0.4rem;
     }
 
     .tagline {
       color: #1a73e8;
       font-size: 0.9rem;
       font-weight: 600;
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.75rem;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+    }
+
+    .section-title {
+      color: #1a1a1a;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-bottom: 0.6rem;
     }
 
     p {
       color: #555;
       font-size: 1.05rem;
       line-height: 1.75;
+      margin-bottom: 1.75rem;
+      text-align: left;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
       margin-bottom: 2.25rem;
+    }
+
+    .skill-tag {
+      background: #f0f4ff;
+      color: #1a73e8;
+      font-size: 0.88rem;
+      font-weight: 600;
+      padding: 0.35rem 0.9rem;
+      border-radius: 20px;
+      border: 1px solid #c5d8fb;
     }
 
     .btn {
@@ -101,20 +128,6 @@
       filter: brightness(0.97);
     }
 
-    .btn-outline {
-      background: transparent;
-      border: 2px solid #1a73e8;
-      color: #1a73e8;
-      box-shadow: none;
-    }
-
-    .btn-outline:hover {
-      background: #1a73e8;
-      color: #fff;
-      box-shadow: 0 10px 28px rgba(26, 115, 232, 0.35);
-    }
-
-    /* Footer */
     footer {
       text-align: center;
       padding: 1.25rem 1.5rem;
@@ -125,34 +138,32 @@
       letter-spacing: 0.03em;
       text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
     }
-
-    footer a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="card">
       <div class="avatar">P</div>
       <h1>Peter Olusola Aiki</h1>
       <p class="tagline">Builder &bull; Learner &bull; Creator</p>
-      <p>Hi, I'm Peter Olusola Aiki — a curious builder learning to create things on the web. This is my personal space where I share my projects and ideas.</p>
-      <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-        <a href="#" class="btn">View My Project</a>
-        <a href="about.html" class="btn btn-outline">About Me</a>
+
+      <p class="section-title">About Me</p>
+      <p>Hi! I'm Peter Olusola Aiki — a curious and driven person who loves building things on the web. I'm on a learning journey, picking up new skills one project at a time and turning ideas into real things people can use.</p>
+
+      <p class="section-title">What I'm Learning</p>
+      <div class="skills">
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Web Design</span>
+        <span class="skill-tag">Problem Solving</span>
       </div>
+
+      <a href="index.html" class="btn">&larr; Back to Home</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2026 Peter Olusola Aiki &mdash; Built with HTML &amp; CSS</p>
   </footer>
